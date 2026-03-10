@@ -29,16 +29,10 @@ cat("Focus: Misrecognition → Political/System Trust → Q12 Alternative News F
 cat("Design: 4 misrecognition × 2 trust × 1 outcome = 8 pathways\n\n")
 
 # ---- LOAD AND PREPARE DATA ----
-cat("Loading and preparing data from data_preparation.R...\n")
+cat("Loading and preparing data...\n")
 
 # Source the data management script
-if (file.exists("scripts/data_preparation.R")) {
-  source("scripts/data_preparation.R")
-} else if (file.exists("data_preparation.R")) {
-  source("data_preparation.R")
-} else {
-  stop("Cannot find data_preparation.R")
-}
+source("scripts/data_prep.R")
 
 cat("Data management script loaded successfully\n")
 cat("Sample size:", nrow(df), "observations\n\n")

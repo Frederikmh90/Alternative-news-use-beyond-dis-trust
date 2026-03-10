@@ -10,13 +10,7 @@ library(dplyr)
 library(psych)
 library(writexl)
 
-if (file.exists("scripts/data_preparation.R")) {
-  source("scripts/data_preparation.R")
-} else if (file.exists("data_preparation.R")) {
-  source("data_preparation.R")
-} else {
-  stop("Cannot find data_preparation.R")
-}
+source("scripts/data_prep.R")
 
 cat("=================================================================\n")
 cat("CREATING DESCRIPTIVE STATISTICS TABLES (MEANS VERSION)\n")

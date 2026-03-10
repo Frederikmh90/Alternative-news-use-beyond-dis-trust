@@ -4,13 +4,7 @@ library(dplyr)
 library(psych)
 
 # Load data management for recodes, controls, and frames
-if (file.exists("scripts/data_preparation.R")) {
-  source("scripts/data_preparation.R")
-} else if (file.exists("data_preparation.R")) {
-  source("data_preparation.R")
-} else {
-  stop("Cannot find data_preparation.R")
-}
+source("scripts/data_prep.R")
 
 # Helpers (no external dependencies)
 wmean <- function(x, w){

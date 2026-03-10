@@ -33,18 +33,6 @@ install.packages(c(
 
 ---
 
-## Data
-
-Place the survey data file in `data/`:
-
-```
-data/RUC_Main_Final.sav
-```
-
-The data are available from the authors on reasonable request (survey respondents were recruited via a commercial panel; redistribution is not permitted).
-
----
-
 ## Reproducing all paper outputs
 
 Run from the project root:
@@ -59,7 +47,7 @@ This executes the full pipeline in order and writes all outputs to `outputs/`.
 
 | Step | Script | Produces |
 |------|--------|---------|
-| 1 | `data_preparation.R` | Cleaned data objects used by all downstream scripts |
+| 1 | `data_prep.R` | Cleaned data objects used by all downstream scripts |
 | 2 | `descriptive_statistics.R` | Weighted frequency tables |
 | 3 | `reg_h1_msm_skepticism.R` | H1 – Mainstream media skepticism regressions |
 | 4 | `reg_h2_altnews_seeking.R` | H2 – Alternative news seeking regressions |
@@ -72,7 +60,7 @@ This executes the full pipeline in order and writes all outputs to `outputs/`.
 | 11 | `create_appendix_descriptives_only.R` | Table 3 (alt news by quartiles) |
 | 12 | `create_appendices.R` | Appendices A (factor analysis), B (diagnostics), C (mediation) |
 
-Scripts can also be run individually; each sources `data_preparation.R` as its first step.
+Scripts can also be run individually; each sources `data_prep.R` as its first step.
 
 ---
 

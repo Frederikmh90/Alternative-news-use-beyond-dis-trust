@@ -17,7 +17,7 @@ if (!dir.exists("outputs")) {
 
 # ---- 1. DATA PREPARATION ----
 cat("1. Data preparation...\n")
-source("scripts/data_preparation.R")
+source("scripts/data_prep.R")
 cat("   ✓ Done\n\n")
 
 # ---- 2. DESCRIPTIVE STATISTICS ----

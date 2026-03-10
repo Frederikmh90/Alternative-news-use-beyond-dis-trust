@@ -10,13 +10,7 @@ library(grid)
 library(sandwich)
 library(lmtest)
 
-if (file.exists("scripts/data_preparation.R")) {
-  source("scripts/data_preparation.R")
-} else if (file.exists("data_preparation.R")) {
-  source("data_preparation.R")
-} else {
-  stop("Cannot find data_preparation.R")
-}
+source("scripts/data_prep.R")
 
 extract_coefficients <- function(model_path, model_name) {
   if (!file.exists(model_path)) return(NULL)

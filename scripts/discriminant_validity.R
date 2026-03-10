@@ -21,13 +21,7 @@ library(semTools)
 library(writexl)
 
 # ---- 1) LOAD DATA ----
-if (file.exists("scripts/data_preparation.R")) {
-  source("scripts/data_preparation.R")
-} else if (file.exists("data_preparation.R")) {
-  source("data_preparation.R")
-} else {
-  stop("Cannot find data_preparation.R")
-}
+source("scripts/data_prep.R")
 
 # Create output directories
 dir.create("outputs/discriminant_validity", recursive = TRUE, showWarnings = FALSE)

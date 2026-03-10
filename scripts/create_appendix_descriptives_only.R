@@ -6,11 +6,7 @@
 library(dplyr)
 library(writexl)
 
-if (file.exists("scripts/data_preparation.R")) {
-  source("scripts/data_preparation.R")
-} else {
-  source("data_preparation.R")
-}
+source("scripts/data_prep.R")
 
 w <- as.numeric(controls$analysis_weight)
 w[is.na(w) | w <= 0] <- 1

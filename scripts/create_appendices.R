@@ -23,13 +23,7 @@ if (!require("officer", quietly = TRUE)) {
 }
 
 # Load data preparation script
-if (file.exists("scripts/data_preparation.R")) {
-  source("scripts/data_preparation.R")
-} else if (file.exists("data_preparation.R")) {
-  source("data_preparation.R")
-} else {
-  stop("Cannot find data_preparation.R")
-}
+source("scripts/data_prep.R")
 
 # Create output directory
 dir.create("outputs/appendices", recursive = TRUE, showWarnings = FALSE)
