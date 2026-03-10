@@ -1,0 +1,28 @@
+# Data files (available from authors on request)
+data/*.sav
+data/*.csv
+data/*.xlsx
+
+# Generated outputs (reproduced by running the pipeline)
+outputs/
+
+# R session artifacts
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+Rplots.pdf
+
+# OS artifacts
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Temp files
+~$*
+*.tmp
+
+# IDE
+.cursor/
+.vscode/
+*.code-workspace
